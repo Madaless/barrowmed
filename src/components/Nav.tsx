@@ -14,7 +14,7 @@ const Nav = () => {
         <div className='flex space-x-8 justify-center items-center'>
           <Link href={'/shop'} className='max-md:hidden'>Sklep</Link>
           <Link href={'/about'} className='max-md:hidden'>O nas</Link>
-          <a className='max-md:hidden'>Kontakt</a>
+          <Link href={'/contact'} className='max-md:hidden'>Kontakt</Link>
           <button title='Przedmioty w koszyku' className='pr-8 border-r-2'>
             <svg
               width="24"
@@ -31,8 +31,7 @@ const Nav = () => {
           </button>
           <button className='text-primary rounded-md p-2 block max-md:hidden hover:text-primary/80 '>Moje konto</button>
           <button className='block md:hidden w-[24px] h-[24px]'>
-            <Image src={HamburgerIcon} />
-
+            <Image width={24} height={24} alt='menu' src={HamburgerIcon} />
           </button>
         </div>
 

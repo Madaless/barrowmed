@@ -18,28 +18,30 @@ type Prop = {
 const ArticleCard: React.FC<Prop> = ({ article }: Prop) => {
     return (
         <article className="flex-1 min-w-[250px] mr-8 mb-8 overflow-hidden rounded-lg  transition hover:shadow-lg w-full ">
-            <Image
-                alt="Office"
-                width={500}
-                src={article.imageURL}
-                className="h-56 w-full object-cover"
-            />
+            <a href="#">
 
-            <div className="bg-white p-4 sm:p-6">
-                <time dateTime="2022-10-10" className="block text-xs text-gray-500">
-                    {article.date}
-                </time>
+                <Image
+                    alt="Office"
+                    width={500}
+                    src={article.imageURL}
+                    className="h-56 w-full object-cover"
+                />
 
-                <a href="#">
+                <div className="bg-white p-4 sm:p-6">
+                    <time dateTime="2022-10-10" className="block text-xs text-gray-500">
+                        {article.date}
+                    </time>
+
                     <h3 className="mt-0.5 text-lg text-gray-900">
                         {article.title}
                     </h3>
-                </a>
 
-                <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-                    {article.content}
-                </p>
-            </div>
+                    <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                        {article.content}
+                    </p>
+                </div>
+            </a>
+
         </article>
     )
 }

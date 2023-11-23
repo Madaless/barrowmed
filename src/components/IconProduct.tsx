@@ -4,16 +4,31 @@ import { title } from 'process'
 
 const IconProduct: React.FC<{ className?: string, image: StaticImageData, description: string, title: string, height: number }> = ({ className, image, description, title, height }) => {
     return (
-        <div className={className + " bg-white"}>
-            <a href="#" className="group block pb-4 overflow-hidden">
-                {/* <img
-                    src="https://images.unsplash.com/photo-1592921870789-04563d55041c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-                    alt=""
-                    className="h-[350px] w-full object-cover sm:h-[450px]"
-                /> */}
-                <Image src={image} height={height} className="object-covertransition duration-500 group-hover:scale-105" quality={100} alt="" />
+        // <div className={className + ' bg-cyan-100 w-full min-h-[100px]'}></div>
+        <div className={className + " bg-white group relative block pb-2 overflow-hidden rounded-lg"}>
+            <a href="#" className="">
+                <button
+                    className="absolute end-4 top-4 z-10 rounded-full text-gray-900 transition hover:text-gray-900/75 "
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth="1.5"
+                        stroke="currentColor"
+                        className="h-4 w-4"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            className='bg-white'
+                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                        />
+                    </svg>
+                </button>
+                <Image src={image} height={height} className="object-contain group-hover:scale-105 transition duration-500 w-full max-h-[300px]" quality={100} alt="" />
 
-                <div className="mt-3 flex justify-between text-sm p-2">
+                <div className="mt-3 flex justify-between p-2 text-lg">
                     <div>
                         <h3
                             className="text-gray-900 group-hover:underline group-hover:underline-offset-4"

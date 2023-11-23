@@ -1,6 +1,5 @@
 import Articles from "@/components/Articles"
 import { Bestsellers } from "@/components/Bestsellers"
-import Footer from "@/components/Footer"
 import Hero from "@/components/Hero"
 
 
@@ -13,7 +12,6 @@ export default function Home() {
         <Articles />
         <Bestsellers />
       </main>
-      <Footer />
 
     </>
   )
