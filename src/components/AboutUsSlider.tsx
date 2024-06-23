@@ -67,7 +67,7 @@ const AboutUsSlider = () => {
                 >
                     <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
                         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                            Don't just take our word for it...
+                            Don&apos;t just take our word for it...
                         </h2>
 
                         <p className="mt-4 text-gray-700">
@@ -189,7 +189,7 @@ const AboutUsSlider = () => {
 
                                         <div className="mt-4">
                                             <p className="text-2xl font-bold text-rose-600 sm:text-3xl">
-                                                Stayin' Alive
+                                                Stayin&apos; Alive
                                             </p>
 
                                             <p className="mt-4 leading-relaxed text-gray-700">
@@ -271,7 +271,7 @@ const AboutUsSlider = () => {
 
                                         <div className="mt-4">
                                             <p className="text-2xl font-bold text-rose-600 sm:text-3xl">
-                                                Stayin' Alive
+                                                Stayin&apos; Alive
                                             </p>
 
                                             <p className="mt-4 leading-relaxed text-gray-700">
@@ -353,7 +353,7 @@ const AboutUsSlider = () => {
 
                                         <div className="mt-4">
                                             <p className="text-2xl font-bold text-rose-600 sm:text-3xl">
-                                                Stayin' Alive
+                                                Stayin&apos; Alive
                                             </p>
 
                                             <p className="mt-4 leading-relaxed text-gray-700">

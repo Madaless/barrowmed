@@ -1,6 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
-import heroImage from '../assets/images/hero.svg'
+
 
 const Hero = () => {
     return (
@@ -11,13 +10,13 @@ const Hero = () => {
                 <p className=' bg-opacity-10 backdrop-filter backdrop-blur-lg inline-block'>Sprawdz nasze artykuły i sklep</p>
             </div>
             <div className='justify-end flex ml-[60%] h-[65vh] flex-wrap flex-col pb-14 pr-10 pt-14'>
-                <a className='min-h-[10vw] min-w-[50%] flex-[1_1_50%] bg-opacity-10 backdrop-filter backdrop-blur-lg flex items-center'>
+                <a className='hidden sm:flex min-h-[10vw] min-w-[50%] flex-[1_1_50%] bg-opacity-10 backdrop-filter backdrop-blur-lg items-center'>
                     <span className='mx-auto text-white text-2xl underline'>Zdrowie</span></a>
-                <a className='bg-gray-950 min-h-[10vw] min-w-[50%] flex-[1_1_50%] bg-opacity-10 backdrop-filter backdrop-blur-lg flex items-center'>
+                <a className='hidden sm:flex bg-gray-950 min-h-[10vw] min-w-[50%] flex-[1_1_50%] bg-opacity-10 backdrop-filter backdrop-blur-lg items-center'>
                     <span className='mx-auto text-white text-2xl underline'>Wiedza</span></a>
-                <a className='bg-gray-950 min-h-[10vw] min-w-[50%] flex-[1_1_50%] bg-opacity-10 backdrop-filter backdrop-blur-lg flex items-center'>
+                <a className='hidden sm:flex bg-gray-950 min-h-[10vw] min-w-[50%] flex-[1_1_50%] bg-opacity-10 backdrop-filter backdrop-blur-lg items-center'>
                     <span className='mx-auto rounded text-white text-2xl underline'>Produkty</span></a>
-                <a className='min-h-[10vw] min-w-[50%] flex-[1_1_50%] bg-opacity-10 backdrop-filter backdrop-blur-lg  flex items-center'>
+                <a className='hidden sm:flex min-h-[10vw] min-w-[50%] flex-[1_1_50%] bg-opacity-10 backdrop-filter backdrop-blur-lg items-center'>
                     <span className='mx-auto text-white text-2xl underline'>Ćwiczenia</span></a>
             </div>
         </section>

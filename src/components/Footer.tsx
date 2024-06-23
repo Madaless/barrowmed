@@ -1,22 +1,22 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 // bg-[url('/dessert-landscape-2000x1125.jpg')]
 //bg-[url('/hero.svg')] bg-[50%] bg-contain bg-no-repeat
 const Footer = () => {
     return (
-        <footer className="bg-white">
-
+        <footer className="bg-white mt-12">
             <div className="flex max-lg:flex-col flex-wrap">
                 <div className="basis-1/3 p-2 bg-secondary flex justify-center">
                     <Image alt='dupa' height={100} width={500} src="/hero.svg" className=' mx-auto '></Image>
                 </div>
-                <div className="basis-2/3 p-4">
+                <div className="basis-2/3 p-4 px-16">
                     <div className="px-4 py-8 sm:px-6 lg:col-span-3 lg:px-8">
                         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
                             <div>
                                 <p>
                                     <span className="text-xs uppercase tracking-wide text-gray-500">
-                                        Call us
+                                        Zadzwoń do nas
                                     </span>
 
                                     <a
@@ -28,69 +28,67 @@ const Footer = () => {
                                 </p>
 
                                 <ul className="mt-8 space-y-1 text-sm text-gray-700">
-                                    <li>Monday to Friday: 10am - 5pm</li>
-                                    <li>Weekend: 10am - 3pm</li>
+                                    <li>Poniedziałek do piątku: 10:00 - 17:00</li>
+                                    <li>Weekend: 10:00 - 15:00</li>
                                 </ul>
-
-
                             </div>
 
                             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                                 <div>
-                                    <p className="font-medium text-gray-900">Services</p>
+                                    <p className="font-medium text-gray-900">Usługi</p>
 
                                     <ul className="mt-6 space-y-4 text-sm">
                                         <li>
                                             <a href="#" className="text-gray-700 transition hover:opacity-75">
-                                                1on1 Coaching
+                                                Indywidualne Konsultacje
                                             </a>
                                         </li>
 
                                         <li>
                                             <a href="#" className="text-gray-700 transition hover:opacity-75">
-                                                Company Review
+                                                Przegląd Firmy
                                             </a>
                                         </li>
 
                                         <li>
                                             <a href="#" className="text-gray-700 transition hover:opacity-75">
-                                                Accounts Review
+                                                Przegląd Kont
                                             </a>
                                         </li>
 
                                         <li>
                                             <a href="#" className="text-gray-700 transition hover:opacity-75">
-                                                HR Consulting
+                                                Doradztwo HR
                                             </a>
                                         </li>
 
                                         <li>
                                             <a href="#" className="text-gray-700 transition hover:opacity-75">
-                                                SEO Optimisation
+                                                Optymalizacja SEO
                                             </a>
                                         </li>
                                     </ul>
                                 </div>
 
                                 <div>
-                                    <p className="font-medium text-gray-900">Company</p>
+                                    <p className="font-medium text-gray-900">Firma</p>
 
                                     <ul className="mt-6 space-y-4 text-sm">
                                         <li>
                                             <a href="#" className="text-gray-700 transition hover:opacity-75">
-                                                About
+                                                O nas
                                             </a>
                                         </li>
 
                                         <li>
                                             <a href="#" className="text-gray-700 transition hover:opacity-75">
-                                                Meet the Team
+                                                Poznaj Zespół
                                             </a>
                                         </li>
 
                                         <li>
                                             <a href="#" className="text-gray-700 transition hover:opacity-75">
-                                                Accounts Review
+                                                Przegląd Kont
                                             </a>
                                         </li>
                                     </ul>
@@ -103,34 +101,27 @@ const Footer = () => {
                                 <ul className="flex flex-wrap gap-4 text-xs">
                                     <li>
                                         <a href="#" className="text-gray-500 transition hover:opacity-75">
-                                            Terms & Conditions
+                                            Regulamin
                                         </a>
                                     </li>
 
                                     <li>
-                                        <a href="#" className="text-gray-500 transition hover:opacity-75">
-                                            Privacy Policy
-                                        </a>
+                                        <Link href={'/privacy'} className="text-gray-500 transition hover:opacity-75">Polityka prywatności</Link>
                                     </li>
 
                                     <li>
-                                        <a href="#" className="text-gray-500 transition hover:opacity-75">
-                                            Cookies
-                                        </a>
+                                        <Link href={'/cookies'} className="text-gray-500 transition hover:opacity-75">Ciasteczka</Link>
                                     </li>
                                 </ul>
 
                                 <p className="mt-8 text-xs text-gray-500 sm:mt-0">
-                                    &copy; 2022. Company Name. All rights reserved.
+                                    &copy; 2023. Barrowmed. Wszelkie prawa zastrzeżone.
                                 </p>
                             </div>
                         </div>
-                    </div></div>
+                    </div>
+                </div>
             </div>
-
-
-
-
         </footer>)
 }
 

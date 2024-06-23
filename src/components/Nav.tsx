@@ -3,6 +3,7 @@ import logoNav from '../assets/images/Logo_navbar_white1.svg'
 import Image from 'next/image'
 import HamburgerIcon from '../assets/icons/hamburger.svg'
 import Link from 'next/link'
+import LanguageSelect from './LanguageSelect'
 // bg-white bg-opacity-50 backdrop-filter backdrop-blur-lg p-4 fixed w-full z-10
 const Nav = () => {
   return (
@@ -15,7 +16,7 @@ const Nav = () => {
           <Link href={'/shop'} className='max-md:hidden'>Sklep</Link>
           <Link href={'/about'} className='max-md:hidden'>O nas</Link>
           <Link href={'/contact'} className='max-md:hidden'>Kontakt</Link>
-          <button title='Przedmioty w koszyku' className='pr-8 border-r-2'>
+          <button title='Przedmioty w koszyku' >
             <svg
               width="24"
               height="24"
@@ -29,7 +30,10 @@ const Nav = () => {
               </text>
             </svg>
           </button>
-          <button className='text-primary rounded-md p-2 block max-md:hidden hover:text-primary/80 '>Moje konto</button>
+          <div className='pr-8 border-r-2'>          <LanguageSelect />
+          </div>
+
+          <Link href={'/login'} className='max-md:hidden'><button className='text-primary rounded-md p-2 block max-md:hidden hover:text-primary/80 '>Moje konto</button></Link>
           <button className='block md:hidden w-[24px] h-[24px]'>
             <Image width={24} height={24} alt='menu' src={HamburgerIcon} />
           </button>
